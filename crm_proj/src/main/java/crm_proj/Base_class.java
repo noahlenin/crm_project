@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -35,7 +36,8 @@ public class Base_class {
 	
 		@BeforeMethod (groups = {"SmokeTest","RegionalTest"})
 		public void openApp() {
-		driver=new ChromeDriver();
+			WebDriver driver=new FirefoxDriver();
+		//driver=new ChromeDriver();
 		driver.get("http://localhost:8888/index.php?module=Home&action=index&parenttab=My%20Home%20Page");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
