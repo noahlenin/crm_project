@@ -101,10 +101,10 @@ public class WebDriverUtility {
     * @param element
     */
    
-   public void mouseOver(WebDriver driver,WebElement element)
+   public void mouseOver(WebDriver driver,WebElement element1,WebElement element2)
    {
 	   Actions act = new Actions(driver);
-	   act.moveToElement(element).perform();
+	   act.moveToElement(element1).moveToElement(element2).click().build().perform();
 	   
    }
    

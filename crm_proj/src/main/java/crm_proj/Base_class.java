@@ -10,11 +10,29 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class Base_class {
+import com.crm.pom.crm_pom;
 
+
+
+public class Base_class {
+	
+	
+	
+	
 	
 	public WebDriver driver;
+	
+	
+	
+	@AfterMethod
+	public void signout()
+	{
+		crm_pom cr=new crm_pom(driver);
+		cr.signOut();
 		
+	}
+	
+	
 		@BeforeMethod (groups = {"SmokeTest","RegionalTest"})
 		public void openApp() {
 		driver=new ChromeDriver();
@@ -31,8 +49,16 @@ public class Base_class {
 		}
 	
 	
-	@AfterMethod (groups = {"SmokeTest","RegionalTest"})
-		
+	//@AfterMethod (groups = {"SmokeTest","RegionalTest"})
+	
+	
+	
+	
+	
+	
+/*	
+	
+		@AfterMethod
 		public void closeApp() 
 		{
 			WebElement ele = driver.findElement(By.xpath("(//td[@class='small'])[2]"));
@@ -42,6 +68,6 @@ public class Base_class {
 			driver.quit();
 		}
 		
-
+*/
 	}
 

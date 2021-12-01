@@ -6,16 +6,19 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.crm.pom.crm_pom;
+
 public class test3 extends Base_class{
 
 	@Test
 	public void tc3()
 	{
+		crm_pom cr=new crm_pom(driver);
 		
 		driver.findElement(By.xpath("(//a[text()='Organizations'])[1]")).click();
 		driver.findElement(By.xpath("//img[@alt='Create Organization...']")).click();
 		
-		driver.findElement(By.name("accountname")).sendKeys("noah112233");
+		driver.findElement(By.name("accountname")).sendKeys("112");
 		driver.findElement(By.xpath("//img[@alt='Select']")).click();
 		
 		

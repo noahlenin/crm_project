@@ -1,17 +1,23 @@
 package crm_proj;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+import com.crm.pom.crm_pom;
 
 public class test1 extends Base_class {
 
 	
 	@Test
+	
+	
 	public void tc1() {
 		
-		driver.findElement(By.xpath("(//a[text()='Organizations'])[1]")).click();
-		driver.findElement(By.xpath("//img[@alt='Create Organization...']")).click();
+		crm_pom cr=new crm_pom(driver);
+		
+		cr.org();
+		
+		cr.plus();
+		
+	/* driver.findElement(By.xpath("(//a[text()='Organizations'])[1]")).click();
+	//driver.findElement(By.xpath("//img[@alt='Create Organization...']")).click();
 		
 		
 		driver.findElement(By.name("accounttype"));
@@ -19,7 +25,7 @@ public class test1 extends Base_class {
 		sel.selectByVisibleText("Banking");
 		
 				
-
+*/
 	}
 
 }
