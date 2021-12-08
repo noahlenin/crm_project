@@ -13,21 +13,25 @@ import org.testng.annotations.Parameters;
 
 import com.crm.pom.crm_pom_login;
 
+import crm_proj_webDriverUtilities.WebDriverUtility;
+
 
 public class Base_class {
-	
-PropFile pf = new PropFile();
+	public static WebDriver staticDriver;
+ public PropFile pf = new PropFile();
+ public WebDriverUtility wb=new WebDriverUtility();
 
 	public WebDriver driver;
 	
-		@Parameters("browser")
+	//	@Parameters("browser")
 		@BeforeMethod (groups = {"SmokeTest","RegionalTest"})
-		public void openApp(String Browser) throws IOException {
-		
-			if(Browser.equalsIgnoreCase("chrome"))
+		public void openApp() throws IOException {
+	
+		//	if(Browser.equalsIgnoreCase("chrome"))
 		driver=new ChromeDriver();
-			else if(Browser.equalsIgnoreCase("firefox"))
-				driver=new FirefoxDriver();
+	//		else if(Browser.equalsIgnoreCase("firefox"))
+		//		driver=new FirefoxDriver();
+			staticDriver=driver;
 		driver.get("http://localhost:8888/index.php?module=Home&action=index&parenttab=My%20Home%20Page");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -46,7 +50,7 @@ PropFile pf = new PropFile();
 		{
 			crm_pom_login cr=new crm_pom_login(driver);
 			cr.signOut();
-			driver.quit();
+		staticDriver.quit();
 			
 		}
 		

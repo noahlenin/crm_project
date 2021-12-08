@@ -12,7 +12,7 @@ public class test2 extends Base_class{
 		driver.findElement(By.xpath("(//a[text()='Organizations'])[1]")).click();
 		driver.findElement(By.xpath("//img[@alt='Create Organization...']")).click();
 		
-	driver.findElement(By.name("accountname")).sendKeys("test2");
+	driver.findElement(By.name("accountname")).sendKeys("test233");
 	driver.findElement(By.xpath("//img[@alt='Select']")).click();
 
 	}

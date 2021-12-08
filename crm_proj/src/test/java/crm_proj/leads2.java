@@ -3,14 +3,15 @@ package crm_proj;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+//@Listeners(Generic_Utilities.ITestList.class)
 public class leads2 extends Base_class{
 	
 	@Test (groups = {"RegionalTest"})
 	public void tcl_2() throws InterruptedException
 	{
-		driver.findElement(By.xpath("//a[text()='Leads']")).click();
+		driver.findElement(By.xpath("//a[text()='eads']")).click();
 		driver.findElement(By.xpath("//a[text()='Go to Advanced Search']")).click();
 		Select s=new Select(driver.findElement(By.name("fcol0")));
 		s.selectByVisibleText("Salutation");

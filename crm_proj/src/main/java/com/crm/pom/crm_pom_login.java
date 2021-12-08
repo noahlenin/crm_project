@@ -13,7 +13,7 @@ import crm_proj_webDriverUtilities.WebDriverUtility;
 
 public class crm_pom_login extends WebDriverUtility {
 	
-	WebDriverUtility wb=new WebDriverUtility();
+	 WebDriverUtility wb=new WebDriverUtility();
 	PropertyFileUtility pb=new PropertyFileUtility();
 
 	

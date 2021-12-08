@@ -1,15 +1,16 @@
 package crm_proj;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+//@Listeners(Generic_Utilities.ITestList.class)
 public class leads1 extends Base_class {
 
 	@Test (groups = {"RegionalTest"})
 	public void tcl_1()
 	{
 		
-		driver.findElement(By.xpath("//a[text()='Leads']")).click();
+		driver.findElement(By.xpath("//a[text()='eads']")).click();
 		driver.findElement(By.xpath("//img[@alt='Create Lead...']")).click();
 		
 		driver.findElement(By.name("lastname")).sendKeys("noah");

@@ -2,6 +2,7 @@ package crm_proj_webDriverUtilities;
 
 
 import java.io.File;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -105,8 +106,7 @@ public class WebDriverUtility {
    {
 	   Actions act = new Actions(driver);
 	   act.moveToElement(element1).moveToElement(element2).click().build().perform();
-	   
-   }
+	}
    
    /**
     * This method performs right click operation 
@@ -185,7 +185,7 @@ public class WebDriverUtility {
     public void takeScreenshot(WebDriver driver, String screenshotName) throws Throwable {
     	TakesScreenshot ts=(TakesScreenshot)driver;
     	File src=ts.getScreenshotAs(OutputType.FILE);
-    	File dest=new File("./screenshot/"+screenshotName+".PNG");
+    	File dest=new File("./ScreenShots/"+screenshotName+".PNG");
     	Files.copy(src, dest);
     }
     
@@ -198,6 +198,13 @@ public class WebDriverUtility {
 	   act.sendKeys(Keys.ENTER).perform();
    } 
    
+   public String sysDate()
+   {
+	   Date d=new Date();
+	   String date = d.toString();
+	   return date;
+	   
+   }
   
 
     

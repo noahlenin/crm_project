@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="crm_proj.test1">
+      <class name="crm_proj.leads1">
         <methods>
           <include name="signout"/>
+          <include name="tcl_1"/>
           <include name="openApp"/>
-          <include name="tc1"/>
         </methods>
-      </class> <!-- crm_proj.test1 -->
+      </class> <!-- crm_proj.leads1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
