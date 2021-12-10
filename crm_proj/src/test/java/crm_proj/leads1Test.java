@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 @Listeners(Generic_Utilities.ITestList.class)
 
-public class leads1 extends Base_class {
+public class leads1Test extends Base_class {
 
 	
 	@Test(retryAnalyzer = Generic_Utilities.Retry_Analyzer.class)

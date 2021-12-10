@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-//@Listeners(Generic_Utilities.ITestList.class)
-public class leads2 extends Base_class{
+@Listeners(Generic_Utilities.ITestList.class)
+public class leads2Test extends Base_class{
 	
 	@Test (groups = {"RegionalTest"})
 	public void tcl_2() throws InterruptedException

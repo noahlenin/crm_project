@@ -4,7 +4,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class leads3 extends Base_class{
+public class leads3Test extends Base_class{
 @Test (groups = {"RegionalTest"})
 	public void tcl_3()
 	{
