@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import crm_proj_webDriverUtilities.WebDriverUtility;
-
 public class oppotunity extends Base_class {
 	@Test
 	public void tc34()
