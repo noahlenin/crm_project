@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 public class leads3Test extends Base_class{
-@Test (groups = {"RegionalTest"})
+@Test
 	public void tcl_3()
 	{
 		driver.findElement(By.xpath("//a[text()='Leads']")).click();

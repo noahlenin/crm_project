@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 public class leads1Test extends Base_class {
 
 	
-	@Test(retryAnalyzer = Generic_Utilities.Retry_Analyzer.class)
+//	@Test(retryAnalyzer = Generic_Utilities.Retry_Analyzer.class)
 	
 	
-//	@Test (groups = {"RegionalTest"})
+	@Test 
 	public void tcl_1()
 	{
 		

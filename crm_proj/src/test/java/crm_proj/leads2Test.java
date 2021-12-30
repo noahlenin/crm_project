@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 //@Listeners(Generic_Utilities.ITestList.class)
 public class leads2Test extends Base_class{
 	
-	@Test (groups = {"RegionalTest"})
+	@Test
 	public void tcl_2() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//a[text()='eads']")).click();
