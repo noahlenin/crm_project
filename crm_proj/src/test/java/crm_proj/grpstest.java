@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class test6 extends Base_class {
+public class grpstest extends Base_class {
 	
 	
-	@Test
+	@Test(groups = {"SmokeTest","RegressionTest"})
 	public void tc6()
 	{
 		driver.findElement(By.xpath("(//a[text()='Organizations'])[1]")).click();

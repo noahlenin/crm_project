@@ -2,24 +2,30 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-15T21:38:23 IST" name="Default suite" finished-at="2021-12-15T21:38:33 IST" duration-ms="9841">
+  <suite started-at="2021-12-30T15:49:10 IST" name="Default suite" finished-at="2021-12-30T15:49:36 IST" duration-ms="25913">
     <groups>
+      <group name="SmokeTest">
+        <method signature="grptest.tc4()[pri:0, instance:crm_proj.grptest@1189dd52]" name="tc4" class="crm_proj.grptest"/>
+      </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="grptest.tc4()[pri:0, instance:crm_proj.grptest@1189dd52]" name="tc4" class="crm_proj.grptest"/>
+      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2021-12-15T21:38:23 IST" name="Default test" finished-at="2021-12-15T21:38:33 IST" duration-ms="9841">
-      <class name="crm_proj.test2">
-        <test-method is-config="true" signature="open()[pri:0, instance:crm_proj.test2@278bb07e]" started-at="2021-12-15T21:38:23 IST" name="open" finished-at="2021-12-15T21:38:27 IST" duration-ms="3749" status="PASS">
+    <test started-at="2021-12-30T15:49:10 IST" name="Default test" finished-at="2021-12-30T15:49:36 IST" duration-ms="25913">
+      <class name="crm_proj.grptest">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:crm_proj.grptest@1189dd52]" started-at="2021-12-30T15:49:10 IST" name="openApp" finished-at="2021-12-30T15:49:16 IST" duration-ms="5726" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open -->
-        <test-method signature="tc2()[pri:0, instance:crm_proj.test2@278bb07e]" started-at="2021-12-15T21:38:27 IST" name="tc2" finished-at="2021-12-15T21:38:33 IST" duration-ms="6002" status="PASS">
+        </test-method> <!-- openApp -->
+        <test-method signature="tc4()[pri:0, instance:crm_proj.grptest@1189dd52]" started-at="2021-12-30T15:49:16 IST" name="tc4" finished-at="2021-12-30T15:49:34 IST" duration-ms="17870" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc2 -->
-        <test-method is-config="true" signature="close()[pri:0, instance:crm_proj.test2@278bb07e]" started-at="2021-12-15T21:38:33 IST" name="close" finished-at="2021-12-15T21:38:33 IST" duration-ms="50" status="PASS">
+        </test-method> <!-- tc4 -->
+        <test-method is-config="true" signature="signout()[pri:0, instance:crm_proj.grptest@1189dd52]" started-at="2021-12-30T15:49:34 IST" name="signout" finished-at="2021-12-30T15:49:36 IST" duration-ms="2268" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- crm_proj.test2 -->
+        </test-method> <!-- signout -->
+      </class> <!-- crm_proj.grptest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

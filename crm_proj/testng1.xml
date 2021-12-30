@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="regressiontest">
+  <groups>
+  <run>
+  <include name="RegressionTest"/>
+  </run>
+  </groups>
+    <classes>
+      <class name="crm_proj.grptest"/>
+      <class name="crm_proj.grpstest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -20,7 +20,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
 
-import xworker.java.awt.Robot;
 
 /**
  * This class contains webdriver specific generic methods

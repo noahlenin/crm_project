@@ -24,7 +24,7 @@ public class Base_class {
 	public WebDriver driver;
 	
 	//	@Parameters("browser")
-		@BeforeMethod (groups = {"SmokeTest","RegionalTest"})
+		@BeforeMethod (groups = {"SmokeTest","RegressionTest"})
 		public void openApp() throws IOException {
 			WebDriverUtility wb = new WebDriverUtility();
 			
@@ -33,7 +33,7 @@ public class Base_class {
 		driver=new ChromeDriver();
 	//		else if(Browser.equalsIgnoreCase("firefox"))
 		//		driver=new FirefoxDriver();
-		//	staticDriver=driver;
+//			staticDriver=driver;
 		driver.get("http://localhost:8888/index.php?module=Home&action=index&parenttab=My%20Home%20Page");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -47,7 +47,7 @@ public class Base_class {
 		driver.findElement(By.id("submitButton")).click();	
 		}
 		
-		@AfterMethod
+		@AfterMethod(groups = {"SmokeTest","RegressionTest"})
 		public void signout()
 		{
 			crm_pom_login cr=new crm_pom_login(driver);

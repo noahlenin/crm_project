@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class test4 extends Base_class {
-	@Test
+public class grptest extends Base_class {
+	@Test(groups = {"SmokeTest","RegressionTest"})
 	
 	public void tc4() throws InterruptedException
 	{
@@ -17,7 +17,7 @@ public class test4 extends Base_class {
 		
 		WebElement ele = driver.findElement(By.name("emailoptout"));
 		ele.click();
-		Thread.sleep(10000);
+		
 		ele.click();
 	}
 	
